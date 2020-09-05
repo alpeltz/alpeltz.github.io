@@ -1,0 +1,118 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+
+
+#intro{
+  width:80%;
+  background-color:#ffd1f9;
+  margin-top:10px; 
+  padding:10px;
+  margin:auto;
+  text-align:center;
+  border-radius:25px;
+ }
+ 
+
+/*body{background-color:#ffe5fc;
+font-family:arial;
+font-size:14px;
+}*/
+a:link    {color:#426f89; background-color:transparent; text-decoration:none}
+a:visited {color:#872d82; background-color:transparent; text-decoration:none}
+a:hover   {color:#441642; background-color:transparent; text-decoration:underline}
+
+body {
+  background: url(/orange.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#6d6d6d;
+} 
+
+/*edit bg color of container, width of container, height, distance from top,  outline */
+
+.container{
+  background-color:#f1f1f1;
+  width:450px;
+  height:320px;
+  margin-top:100px;
+  outline:5px solid #930102;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+/* change width and height of navigation, and background color of navi */
+.tab {
+    width:100px;
+    height:320px;
+    background-color: #ededed;
+    border-right: 1px solid #ccc;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float:left;
+    position:relative;
+    z-index: 1;
+}
+
+
+/* change color of navigation text, text alignment, font details*/
+.tab p a {
+    color: black;
+    text-align: center;
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+    font-variant:small-caps;
+    padding: 14px 16px;
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+    opacity:1;
+}
+
+/* Change background color of links on hover */
+.tab p a:hover {
+    background-color: #edc487;
+}
+
+/* change background color of the active tab */
+.tab p a:focus, .active {
+    background-color: #FAA629;
+
+}
+
+/* change text alignment, and font of the body content */
+.tabcontent {
+    text-align:left;
+    font-family: 'Raleway', sans-serif;
+    display: none;
+    padding: 6px 12px;   
+    height:300px;
+    overflow: auto;
+}
+
+/* change font of the heading titles*/
+h2{
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+/*slide in from left animation*/
+
+.w3-animate-left{position:relative;animation:animateleft 0.7s}
+@keyframes animateleft{from{left:-100px;opacity:0} to{left:0;opacity:1}}
+
+
+/*PLEASE DONT CHANGE*/
+  .credit{
+   font-size: 12px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   color:gray;
+}

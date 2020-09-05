@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>armor up!</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+  </head>
+  
+  <body>
+<div class="container">
+
+<div class="tab">
+<!-- you can change the title of the tabs here, as the link name !-->
+  <p><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">about</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'BYF')">byf</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'IDs')">ids</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Interests')">interests</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'CCs')" >cc's</a></p>
+</div>
+
+
+<div id="About" class="tabcontent w3-animate-left">
+  <h2>amy</h2>
+  <p>18, she/her, lesbian + aro</p>
+<p>mentally ill</p>
+<p>able-bodied, cis, white</p>
+<p>please read through all my pages before following</p>
+<p><i><a href="/themes.html">my neocities themes!</a></i></p>
+</div>
+
+
+<div id="BYF" class="tabcontent w3-animate-left">
+    <h2>DONT FOLLOW IF</h2>
+<ul>
+<li>you're against fictionkin/otherkin</li>
+<li>you're over 21 or under 14</li>
+<li>you don't have an about page anywhere</li>
+<li>you think cishet aces are LGBT</li>
+<li>you will make fun of me for my interests or ccs</li>
+</ul>
+    <h2> PLEASE TAG </h2>
+<ul>
+<li>NSFW images and explicit NSFW text ESPECIALLY of Torbjorn</li>
+<li>bugs/insects</li>
+<li>animal cruelty</li></ul>
+</div>
+
+
+<div id="IDs" class="tabcontent w3-animate-left">
+  <h2>IDs</h2>
+<h5>*im only uncomfy w/ sharing brigitte!</h5>
+<p><b>literally me:</b></p>
+<p><i> Brigitte (Overwatch) </i></p>
+<p><b>main: </b><br></p>
+<i><p>Princess Bubblegum (Adventure Time)</p>
+<p>Princess Peach (Mario)</p>
+</i>
+</div>
+
+
+<div id="Interests" class="tabcontent w3-animate-left">
+  <h2>Interests</h2>
+<p>✧ = main interest atm</p>
+<p><b>TV Shows</b><br>
+<i>It's always sunny in philidelphia ✧<br>
+Jane the Virgin <br>
+Preacher <br></i></p>
+<p><b>Youtube/Twitch</b><br>
+<i>Fuey500✧<br>
+Bambi--Q<br>
+Game Grumps<br>
+Cow Chop</i></p>
+<p><b>Video Games:</b><br>
+<i>Super Mario<br>
+Overwatch✧<br>
+ACNL<br>
+Heavy Rain</i></p>
+</div>
+
+<div id="CCs" class="tabcontent w3-animate-left">
+<h2>Comfort characters</h2>
+<h5>I will talk about them a lot. Do not follow if you hate them or post hate about them or will make fun of me for liking them. <b>Please tag any nsfw content of them. </b></h5>
+<p>Torbjorn Lindholm </p>
+<p>Reinhardt Wilhelm</p>
+</div>
+</div>
+
+<!-- PLEASE DONT DELETE !-->
+<div class="credit">
+<a href="http://twitter.com/moitencore">@peachie</a></div>
+
+<!-- dont touch this code!-->
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  </body>
+</html>
