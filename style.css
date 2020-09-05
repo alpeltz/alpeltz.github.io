@@ -3,51 +3,41 @@
    "how to change link color." */
 
 
-
-#intro{
-  width:80%;
-  background-color:#ffd1f9;
-  margin-top:10px; 
-  padding:10px;
-  margin:auto;
-  text-align:center;
-  border-radius:25px;
- }
  
 
 /*body{background-color:#ffe5fc;
 font-family:arial;
 font-size:14px;
 }*/
-a:link    {color:#426f89; background-color:transparent; text-decoration:none}
-a:visited {color:#872d82; background-color:transparent; text-decoration:none}
-a:hover   {color:#441642; background-color:transparent; text-decoration:underline}
+a:link    {color:#FFCB05; background-color:transparent; text-decoration:none}
+a:visited {color:rgb(141, 113, 0); background-color:transparent; text-decoration:none}
+a:hover   {color:#f1f1f1; background-color:transparent; text-decoration:underline}
 
 body {
-  background: url(/orange.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color:#6d6d6d;
+  background-color:#00274C;
+  
+  font-family: 'Raleway', sans-serif;
 } 
 
 /*edit bg color of container, width of container, height, distance from top,  outline */
 
 .container{
   background-color:#f1f1f1;
-  width:450px;
-  height:320px;
-  margin-top:100px;
-  outline:5px solid #930102;
-  margin-left: auto;
-  margin-right:auto;
+  width:80%;
+  height:80%;
+  outline:5px solid #FFCB05;
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 /* change width and height of navigation, and background color of navi */
 .tab {
-    width:100px;
-    height:320px;
+    width:120px;
+    height:100%;
     background-color: #ededed;
     border-right: 1px solid #ccc;
     list-style-type: none;
@@ -65,8 +55,6 @@ body {
     color: black;
     text-align: center;
     font-size: 19px;
-    font-family: 'Raleway', sans-serif;
-    font-variant:small-caps;
     padding: 14px 16px;
     display: block;
     text-decoration: none;
@@ -88,7 +76,6 @@ body {
 /* change text alignment, and font of the body content */
 .tabcontent {
     text-align:left;
-    font-family: 'Raleway', sans-serif;
     display: none;
     padding: 6px 12px;   
     height:300px;
@@ -108,11 +95,21 @@ h2{
 @keyframes animateleft{from{left:-100px;opacity:0} to{left:0;opacity:1}}
 
 
-/*PLEASE DONT CHANGE*/
-  .credit{
-   font-size: 12px;
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   color:gray;
+.header{
+  display: block;
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+  height: 10%;
+  color: #f1f1f1;
+}
+.header > h1{
+  margin-top: 5%;
+  float: left;
+  font-size: 32px;
+}
+
+.header > h3{
+  margin-top:5%;
+  float:right;
 }
