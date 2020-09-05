@@ -9,12 +9,12 @@
 font-family:arial;
 font-size:14px;
 }*/
-a:link    {color:#FFCB05; background-color:transparent; text-decoration:none}
-a:visited {color:rgb(141, 113, 0); background-color:transparent; text-decoration:none}
-a:hover   {color:#f1f1f1; background-color:transparent; text-decoration:underline}
+a:link    {color:#00274C; background-color:transparent; text-decoration:none}
+a:visited {color:#00274C; background-color:transparent; text-decoration:none}
+a:hover   {color:rgb(141, 113, 0); background-color:transparent; text-decoration:underline}
 
 body {
-  background-color:#00274C;
+  background-color:#f1f1f1;
   
   font-family: 'Raleway', sans-serif;
 } 
@@ -97,19 +97,35 @@ h2{
 
 .header{
   display: block;
-  width:80%;
+  width:100%;
   margin:auto;
   overflow: hidden;
-  height: 10%;
-  color: #f1f1f1;
+  height: 13vh;
+  color: black;
+  background-color: #ededed;
 }
 .header > h1{
-  margin-top: 5%;
+  margin-top: 5vh;
   float: left;
   font-size: 32px;
+  padding: 10px;
 }
 
 .header > h3{
-  margin-top:5%;
+  margin-top:5vh;
   float:right;
+  padding: 10px;
+}
+
+.content{
+  position:absolute;
+  top:0px;
+  bottom:0px;
+  margin-top:13vh;
+  width:100%;
+}
+.button-dropdown{
+  width:100%;
+  background-color: transparent;
+  color: black;
 }

@@ -7,29 +7,41 @@
   <!-- The style.css file allows you to change the look of your web pages.
          If you include the next line in all your web pages, they will all share the same look.
          This makes it easier to make new pages for your site. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
+
   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav>
     <div class="header">
       <h1>Amilee Peltz</h1>
-      <h3 id="contact">970-818-6460 | apeltz@umich.edu | <a
+      <h3 id="contact">970-818-6460 | <a href="mailto:amileepeltz@gmail.com">amileepeltz@gmail.com</a> | <a
           href="https://www.linkedin.com/in/amilee-peltz-01551b17a/">LinkedIn</a></h3>
 
     </div>
   </nav>
-  <div class="container">
-
-    <div class="tab">
+  <div class="content">
+    <nav class="tab nav flex-column">
       <!-- you can change the title of the tabs here, as the link name !-->
-      <p><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About me</a>
-        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Skills')">Skills</a>
-        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Projects')">Projects</a>
-        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Work')">Work Experience</a>
-        <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Fun')">Fun Facts</a>
-    </div>
+      <p><a href="javascript:void(0)" class="tablinks nav-link active" onclick="openCity(event, 'About')"
+          id="defaultOpen">About me</a>
+        <a href="javascript:void(0)" class="tablinks nav-link" onclick="openCity(event, 'Skills')">Skills</a>
+        <a href="javascript:void(0)" class="tablinks nav-link" onclick="openCity(event, 'Projects')">Projects</a>
+        <a href="javascript:void(0)" class="tablinks nav-link" onclick="openCity(event, 'Work')">Work Experience</a>
+        <a href="javascript:void(0)" class="tablinks nav-link" onclick="openCity(event, 'Fun')">Fun Facts</a>
+    </nav>
 
 
     <div id="About" class="tabcontent w3-animate-left">
@@ -43,7 +55,30 @@
 
 
     <div id="Projects" class="tabcontent w3-animate-left">
-      <p>Add projects maybe with a collapsible header for different projects or different types of projects</p>
+      <p>
+
+        <button class="btn btn-primary button-dropdown" type="button" data-toggle="collapse"
+          data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          Button with data-target
+        </button>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+      <button class="btn btn-primary button-dropdown" type="button" data-toggle="collapse"
+        data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+        Button with data-target
+      </button>
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim
+          keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+      </p>
+
     </div>
 
 
@@ -53,27 +88,27 @@
     <div id="Fun" class="tabcontent w3-animate-left">
       <p>Fun Facts!</p>
     </div>
-
-    <!-- dont touch this code!-->
-    <!--change to bootstrap tabs maybe-->
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+  </div>
+  <!-- dont touch this code!-->
+  <!--change to bootstrap tabs maybe-->
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
       }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
 
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
-    </script>
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
 </body>
 
 </html>
