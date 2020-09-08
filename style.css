@@ -9,9 +9,9 @@
 font-family:arial;
 font-size:14px;
 }*/
-a:link    {color:#00274C; background-color:transparent; text-decoration:none}
-a:visited {color:#00274C; background-color:transparent; text-decoration:none}
-a:hover   {color:rgb(141, 113, 0); background-color:transparent; text-decoration:underline}
+a:link:not(.tablinks)    {color:#00274C; background-color:transparent; text-decoration: underline}
+a:visited:not(.tablinks) {color:#00274C; background-color:transparent; text-decoration: underline}
+a:hover:not(.tablinks)   {color:rgb(141, 113, 0); background-color:transparent; text-decoration:underline}
 
 body {
   background-color:#f1f1f1;
@@ -68,7 +68,7 @@ body {
 }
 
 /* change background color of the active tab */
-.tab p a:focus, .active {
+.tab p a:focus, .active, .active-tab {
     background-color: #66648b;
 
 }
@@ -76,7 +76,6 @@ body {
 /* change text alignment, and font of the body content */
 .tabcontent {
     text-align:left;
-    display: none;
     padding: 6px 12px;   
     height:100%;
     overflow: auto;
