@@ -45,7 +45,9 @@
             <h4>Sudoku Solver</h4>
             <h5>Introduction to Artificial Intelligence</h5>
             Used search algorithms in order to find the solution to a well known puzzle, Sudoku. The algorithm
-            implemented backtracking with AC-3 (arc consistency)
+            implemented backtracking with AC-3 (arc consistency) in order to prune "bad" solutions. For example, in
+            Sudoku, you are able to analyze if choosing one value for a square will remove all possibilites for a
+            different square, making the partial solution bad, and allowing you to prune it.
             <h6><b>Main concepts implemented:</b></h6>
             <ul>
                 <li>Search algorithms using backtracking and arc consistency in order to find a solution faster than
