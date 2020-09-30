@@ -36,23 +36,19 @@
 
         </nav>
         <div class="tabcontent w3-animate-left">
-            <h4>Search Algorithms</h4>
-            <h5>Data Structures and Algorithms</h5>
-            Created a program that uses a command line interface to solve a puzzle entered by the user. The puzzle is a
-            two dimensional map that the user can move around in and press buttons on the floor that will open specific
-            doors, and the goal is to get to the end of the map. The user has multiple options when initiating the
-            executable, as they can select a list or map output, and can request that it be solved with a queue or a
-            stack
+            <h4>Server-side Dynamic Web Pages</h4>
+            <h5>Web Systems</h5>
+            Created a imitation "Instagram" website using server-side dynamic pages. This site involved using Python and
+            Flask frameworks in order to render pages based off of a SQLite database. Users were allowed to log in,
+            create new accounts and posts, like and comment on other posts, and edit their accounts.
             <h6><b>Main concepts implemented:</b></h6>
             <ul>
-                <li>Queue and stack data type usage to implement depth first search and breadth first search algorithms
+                <li>Used Python Flask library to create server-side logic and routing
                 </li>
-                <li>Used a deque in order to have both queue and stack implementations in one data type</li>
-                <li>The current state is stored in the game and the simulation keeps track of all reachable states from
-                    that state, adding them to a queue or stack. Then it pops the next state and finds all reachable
-                    states from there, and so on</li>
-                <li>Implementation of backtracking from finding the goal in order to find an entire path.</li>
-                <li>Use getopt functionality to read in and parse long command line arguments</li>
+                <li>Used SQLite to store data for users, this included likes, follower relationships, posts, comments,
+                    and users</li>
+                <li>Used access to control to ensure that a user could not send malicious POST requests</li>
+                <li>Gained an understanding of Flask sessions in order to save and access user cookies.</li>
             </ul>
         </div>
     </div>
